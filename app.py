@@ -50,18 +50,17 @@ def create_answers_section(df):
     st.header("Which bikes are goof for buying")
     
     return None
-
+   
 
 def main():
+    df_raw = load_data()
     
-    df = load_data()
+    create_dataframe_section(df_raw)
     
-    create_dataframe_section(df)
+    create_answers_section(df_raw)
     
-    create_answers_section(df)
-    
-    st.dataframe(df)
-    
+    return None
+
 if __name__ == '__main__':
     main()
     
