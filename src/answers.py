@@ -9,7 +9,8 @@ def red1_question_9(df):
 
     df_grouped = df_grouped.rename(columns={'id': 'count'})
 
-    fig = px.bar(
+
+    fig =  px.bar(
         df_grouped,
         x="seller_type",
         y="count",
