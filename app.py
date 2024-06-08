@@ -34,6 +34,7 @@ def create_dataframe_section(df):
     
     return None
 
+
 def create_answers_section(df):
     st.title("Main Questions Answers")
     
@@ -49,12 +50,17 @@ def create_answers_section(df):
     st.header("Which bikes are goof for buying")
     
     return None
+   
 
 def main():
-    df_raw = load_data() 
+    df_raw = load_data()
+    
     create_dataframe_section(df_raw)
+    
     create_answers_section(df_raw)
     
+    return None
+
 if __name__ == '__main__':
     main()
     
